@@ -7,11 +7,11 @@ function Transition({ children }) {
   const [loading, setloading] = useState(true);
   const pathname = usePathname();
   useEffect(() => {
-    setTimeout(() => {
-      setloading(false);
-    }, 500);
+   const Timeout = setTimeout(
+      setloading
+    , 500,false);
     return () => {
-      clearTimeout();
+      clearTimeout(Timeout);
     };
   }, [pathname]);
   return (
@@ -19,11 +19,11 @@ function Transition({ children }) {
       {loading && (
         <motion.div
           key={pathname}
-          initial={{ y: "-100%" }}
+          initial={{ y: 0  }}
           animate={{ y: 0 }}
           exit={{ y: "100%" }}
-          transition={{ duration: 1 }}
-          className="h-screen w-screen bg-[#FF7080] fixed"
+          transition={{ duration: 1}}
+          className="h-screen w-screen bg-[#FF7080] fixed z-1"
         />
       )}
       {children}

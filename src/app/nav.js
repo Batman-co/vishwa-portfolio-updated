@@ -17,9 +17,11 @@ const NavLinks = ({ link, children }) => {
 
 function Nav() {
   return (
-    <div className="w-auto h-auto flex gap-2 text-black">
+    <div className="w-auto h-auto flex lg:gap-[280px] sm:gap-[100px] gap-16  text-black fixed mx-[50%] -translate-x-1/2 top-14 ">
       <NavLinks link="/">Home</NavLinks>
       <NavLinks link="/About">About</NavLinks>
+      <NavLinks link="/Works">Works</NavLinks>
+      <NavLinks link="/Hire">Hire</NavLinks>
     </div>
   );
 }
