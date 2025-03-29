@@ -15,7 +15,7 @@ function Transition({ children }) {
     };
   }, [pathname]);
   return (
-    <AnimatePresence mode="wait">
+    <AnimatePresence>
       {loading && (
         <motion.div
           key={pathname}
@@ -23,7 +23,7 @@ function Transition({ children }) {
           animate={{ y: 0 }}
           exit={{ y: "100%" }}
           transition={{ duration: 1}}
-          className="h-screen w-screen bg-[#FF7080] fixed z-1"
+          className="h-screen w-screen bg-[#FF7080] fixed z-2"
         />
       )}
       {children}

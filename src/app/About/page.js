@@ -1,12 +1,12 @@
 "use client";
 import React from "react";
 import Transition from "../Transition";
-
+import styles from "./styles.module.css"
 function About() {
   return (
     <div>
       <Transition>
-        <span className="text-white">Hello</span>
+        
       </Transition>
     </div>
   );
