@@ -76,7 +76,7 @@ export default function Home() {
         <div ref={con} className="h-[300vh] mt-[80vh]">
           <div className="h-[100vh] w-screen flex justify-center items-center sticky top-0">
             <div className="text-[40px] w-[1100px] h-fit text-center text-black ">
-              Hi there! Welcome to my portfolio website I'm Vishwanath, a{" "}
+              Hi there! Welcome to my portfolio website I&apos;m Vishwanath, a{" "}
               <span className="text-[#D94152] font-semibold">web designer</span>{" "}
               and{" "}
               <span className="text-[#D94152] font-semibold relative">
