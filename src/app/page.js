@@ -21,12 +21,14 @@ export default function Home() {
           <Image src="/Images/me.png" layout="responsive" width={500} height={500} alt="me" className="hidden lg:block md:block"/>
           </motion.div>
           
-          <motion.div className="overflow-hidden relative left-4 w-auto h-fit">
+          <motion.div initial="hidden" whileInView="visible" viewport={{once:true}} className="overflow-hidden relative left-4 w-auto h-fit">
             <motion.div
-              initial={{ y: 120 }}
-              whileInView={{ y: 0 }}
-              transition={{ delay: 1.3 }}
-              viewport={{ once: true }}
+              variants={{
+                hidden: {y:120},
+                visible: {y:0},
+              }}
+              transition={{delay:1.4}}
+              
               className="text-black lg:text-[100px] md:text-[64px] sm:text-[56px] text-[48px] z-10  lg:tracking-[50px] md:tracking-[32px] sm:tracking-[28px]"
             >
               Vishwanath
@@ -75,25 +77,26 @@ export default function Home() {
         </div>
         <div ref={con} className="h-[300vh] mt-[80vh]">
           <div className="h-[100vh] w-screen flex justify-center items-center sticky top-0">
-            <div className="text-[40px] w-[1100px] h-fit text-center text-black ">
+            <div className="md:text-[40px] text-[30px]  w-[1100px] h-fit text-center text-black ">
               Hi there! Welcome to my portfolio website I&apos;m Vishwanath, a{" "}
               <span className="text-[#D94152] font-semibold">web designer</span>{" "}
               and{" "}
               <span className="text-[#D94152] font-semibold relative">
                 <span className="absolute bottom-">
                   <svg
-                    width="390"
-                    height="57"
+                    className="w-[150px] h-[50px] md:w-[390px] md:h-[57px]"
                     viewBox="0 0 390 57"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
+                    
                   >
                     <motion.path
                       style={{ pathLength: draw }}
                       d="M241.995 56C140.006 55.5482 -32.5561 45.3436 6.66342 19.9027C48.2089 -7.04692 371.845 -2.09419 387.127 15.5262C398.714 28.8859 360.483 43.993 131.507 56"
                       stroke="#129678"
-                      strokeWidth="1.5"
+                      strokeWidth="3"
                       strokeLinecap="round"
+                      
                     />
                   </svg>
                 </span>{" "}

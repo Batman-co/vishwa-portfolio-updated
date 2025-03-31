@@ -12,13 +12,13 @@ function Projects({ pname, img, date, role }) {
     <motion.div
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className={`w-screen h-[145px] flex items-center hover:bg-[#323232] mt-10 text-[#323232] hover:text-[#eaeaea] transition-all ease-in-out duration-300 border-t-2 p-[24px] gap-28 border-black relative z-0 border-b-2 ${
+      className={`w-screen lg:h-[145px]  flex items-center hover:bg-[#323232] mt-10 text-[#323232] hover:text-[#eaeaea] transition-all ease-in-out duration-300 border-t-2 p-[24px] gap-28 border-black relative z-0 border-b-2 ${
         hovered ? "z-10" : "z-0"
       }`}
     >
-      <span className="text-4xl font-light">{date}</span>
-      <span className="text-5xl font-semibold tracking-tighter">{pname}</span>
-      <span className="text-2xl font-medium tracking-tight absolute right-6">
+      <span className="lg:text-4xl md:text-2xl font-light">{date}</span>
+      <span className="lg:text-5xl md:text-3xl font-semibold tracking-tighter">{pname}</span>
+      <span className="lg:text-2xl md:text-xl font-medium tracking-tight absolute right-6">
         {role}
       </span>
       <AnimatePresence>
