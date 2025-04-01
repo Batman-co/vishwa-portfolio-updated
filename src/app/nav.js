@@ -8,7 +8,7 @@ const NavLinks = ({ link, children }) => {
   return (
     <Link
       href={link}
-      className={path === link ? "text-[#129678]" : "text-black"}
+      className={path === link ? "text-[#129678] font-bold" : "text-black"}
     >
       {children}
     </Link>
@@ -21,7 +21,7 @@ function Nav() {
       <NavLinks link="/">Home</NavLinks>
       <NavLinks link="/About">About</NavLinks>
       <NavLinks link="/Works">Creations</NavLinks>
-      <NavLinks link="/Hire">Hire</NavLinks>
+      <NavLinks link="/Hire">Connect</NavLinks>
     </div>
   );
 }
