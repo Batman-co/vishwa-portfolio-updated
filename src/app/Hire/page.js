@@ -2,7 +2,9 @@ import React from 'react'
 
 function Hire() {
   return (
-    <div>Hire</div>
+    <div className='h-[400vh] w-screen'>
+
+    </div>
   )
 }
 

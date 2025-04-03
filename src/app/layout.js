@@ -1,6 +1,7 @@
 import { Montserrat} from "next/font/google";
 import "./globals.css";
 import Nav from "./nav";
+import Progressbar from "./Progressbar";
 
 
 const mon = Montserrat({
@@ -22,6 +23,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${mon.variable} antialiased`}
       >
+        <Progressbar />
         <Nav />
         {children}
       </body>
