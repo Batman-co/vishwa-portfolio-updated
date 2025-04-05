@@ -6,7 +6,9 @@ import { motion } from "motion/react";
 
 import dynamic from "next/dynamic";
 
-const DynamicProject = dynamic(()=>import("./projects"));
+const DynamicProject = dynamic(()=>import("./projects"),{
+  loading: ()=> <p>Loading...</p>
+});
 function Works() {
   return (
     <Transition>
