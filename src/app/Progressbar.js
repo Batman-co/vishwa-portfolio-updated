@@ -6,7 +6,7 @@ function Progressbar() {
     const {scrollYProgress} = useScroll()
     const scaleX = useSpring(scrollYProgress);
   return (
-    <motion.div style={{scaleX}} className='h-3 w-screen bg-black fixed top-0 origin-left z-10'/>
+    <motion.div style={{scaleX}} className='h-3 w-screen bg-green-300 fixed top-0 origin-left z-10'/>
   )
 }
 

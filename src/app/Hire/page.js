@@ -1,11 +1,13 @@
-import React from 'react'
+import React from "react";
 
 function Hire() {
   return (
-    <div className='h-[400vh] w-screen'>
-
+    <div className="h-[200vh] w-screen relative">
+     
+      <div className="h-screen w-screen sticky top-0 bg-black ">Hello</div>
+      
     </div>
-  )
+  );
 }
 
-export default Hire
+export default Hire;

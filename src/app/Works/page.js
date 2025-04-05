@@ -2,8 +2,11 @@
 import React from "react";
 import Image from "next/image";
 import Transition from "../Transition";
-import { motion, useScroll, useTransform } from "motion/react";
-import Projects from "./projects";
+import { motion } from "motion/react";
+
+import dynamic from "next/dynamic";
+
+const DynamicProject = dynamic(()=>import("./projects"));
 function Works() {
   return (
     <Transition>
@@ -30,6 +33,7 @@ function Works() {
                   viewBox="0 0 12 108"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
+                  className="rotate-180"
                 >
                   <motion.path
                     initial={{ pathLength: 0 }}
@@ -50,10 +54,10 @@ function Works() {
           </motion.span>
         </div>
         <div className="w-screen h-screen mt-10">
-          <Projects date="2022" pname="Learning App" role="UI/UX Designer" img="./Images/Learning.png"/>
-          <Projects date="2022" pname="Fest X" role="UI/UX Designer" img="./Images/festx.png" />
-          <Projects date="2024" pname="Shipped" role="UI/UX Designer" img="./Images/shipped.png" />
-          <Projects date="2024" pname="Fest x'24" role="UI/UX Designer" img="./Images/festx24.png" />  
+          <DynamicProject date="2022" pname="Learning App" role="UI/UX Designer" img="./Images/Learning.png"/>
+          <DynamicProject date="2022" pname="Fest X" role="UI/UX Designer" img="./Images/festx.png" />
+          <DynamicProject date="2024" pname="Shipped" role="UI/UX Designer" img="./Images/shipped.png" />
+          <DynamicProject date="2024" pname="Fest x'24" role="UI/UX Designer" img="./Images/festx24.png" />  
         </div>
       </div>
     </Transition>
