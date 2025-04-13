@@ -1,17 +1,52 @@
 "use client";
-import React from "react";
+import { React, useRef } from "react";
 import Transition from "../Transition";
-import { motion } from "motion/react";
+import { motion, useScroll, useTransform, useSpring } from "motion/react";
 
 function About() {
+  const target = useRef();
+  const { scrollYProgress } = useScroll({ target: target });
+  const scale = useTransform(scrollYProgress, [0, 0.3], [0.5, 1]);
   const text = "About me";
   const letters = text.split("");
-  const text2 = "Hey, I’m Vishwanath—a web developer who loves building smooth, responsive, and visually engaging websites. I work primarily with Next.js and Framer Motion to create dynamic, animated user experiences that feel alive. With a strong eye for design and a solid foundation in Figma, I enjoy crafting clean, intuitive UIs that don’t just look good—they work seamlessly too. Whether it’s bringing motion to a landing page or designing a sleek interface from scratch, I’m all about blending design and development to make the web a more interactive place."
-
   return (
     <Transition>
       <div className="h-auto w-screen relative">
         <div className="h-screen w-screen flex justify-center items-center sticky top-0 z-0">
+          <div className="absolute bottom-16">
+            <svg
+              width="250"
+              height="250"
+              viewBox="0 0 80 40"
+              xmlns="http://www.w3.org/2000/svg"
+              stroke="#666"
+              strokeWidth="2"
+              fill="none"
+            >
+              <motion.circle
+                initial={{ pathLength: 0 }}
+                whileInView={{ pathLength: 1.1 }}
+                transition={{ delay: 1.5, duration: 2 }}
+                cx="20"
+                cy="20"
+                r="4"
+              />
+              <motion.circle
+                initial={{ pathLength: 0 }}
+                whileInView={{ pathLength: 1.1 }}
+                transition={{ delay: 1.5, duration: 2 }}
+                cx="60"
+                cy="20"
+                r="4"
+              />
+              <motion.path
+                initial={{ pathLength: 0 }}
+                whileInView={{ pathLength: 1 }}
+                transition={{ delay: 2, duration: 2 }}
+                d="M25 30 Q40 38 55 30"
+              />
+            </svg>
+          </div>
           <motion.div
             initial="initial"
             whileInView="Inview"
@@ -35,11 +70,34 @@ function About() {
             })}
           </motion.div>
         </div>
-        <div className="h-screen w-screen sticky top-0 bg-black">
-          hello jelly
+        <div ref={target}>
+          <div className="h-screen w-screen sticky flex justify-center items-center top-0 bg-[#ffffff]/35 backdrop-blur-xl">
+            <motion.div
+              style={{ scale }}
+              className="w-[60%] lg:leading-11 text-center text-[#131313] lg:text-3xl"
+            >
+              I'm a passionate web developer with a strong eye for design and a
+              solid foundation in UI/UX principles. I bring ideas to life on the
+              web using Next.js for fast, scalable applications, and I craft
+              smooth, engaging interactions with Framer Motion to elevate user
+              experience. With hands-on experience in Figma, I bridge the gap
+              between design and development, ensuring every project is both
+              visually compelling and technically sound.
+            </motion.div>
+          </div>
+          <div className="h-screen w-screen sticky top-0 mt-[200vh] flex justify-center items-center bg-gray-300">
+            <div className="h-auto w-[60%] lg:w-4xl lg:leading-11 text-center text-black lg:text-3xl">
+            I'm always exploring new technologies and pushing the boundaries of
+            what's possible in the browser. Whether it's optimizing performance,
+            experimenting with animations, or collaborating closely with
+            designers and product teams, I thrive on turning complex problems
+            into intuitive, elegant solutions. Beyond the code, I value clean
+            communication, creative thinking, and building web experiences that
+            not only look great—but feel great to use.
+            </div>
+          </div>
+          <div className="h-[200vh]" />
         </div>
-        <div className="h-screen w-screen sticky top-0 mt-[200vh] bg-gray-300"></div>
-        <div className="h-[200vh]" />
       </div>
     </Transition>
   );
