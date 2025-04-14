@@ -72,10 +72,10 @@ function About() {
           </motion.div>
         </div>
         <div ref={target}>
-          <motion.div style={{ scale }} className="h-screen w-screen sticky flex justify-center items-center top-0 bg-[#fde6e6]">
+          <motion.div style={{ scale }} className="h-screen w-screen sticky flex justify-center items-center top-0 bg-[#5a5a5a]">
             <div
               
-              className="w-[60%] lg:leading-11 text-center text-[#131313] lg:text-3xl"
+              className="w-[60%] lg:leading-11 text-center text-[#d6d6d6] lg:text-3xl"
             >
               I&#39;m a passionate web developer with a strong eye for design and a
               solid foundation in UI/UX principles. I bring ideas to life on the
@@ -86,7 +86,7 @@ function About() {
               visually compelling and technically sound.
             </div>
           </motion.div>
-          <motion.div style={{scale:abt2}} className="h-screen w-screen sticky top-0 mt-[200vh] flex justify-center items-center bg-[#edfed1]">
+          <motion.div style={{scale:abt2}} className="h-screen w-screen sticky top-0 mt-[200vh] flex justify-center items-center bg-[#CEE0A8]">
             <div className="h-auto w-[60%] lg:w-4xl lg:leading-11 text-center text-black lg:text-3xl">
             I&#39;m always exploring new technologies and pushing the boundaries of
             what&#39;s possible in the browser. Whether it&#39;s optimizing performance,
