@@ -7,6 +7,7 @@ function About() {
   const target = useRef();
   const { scrollYProgress } = useScroll({ target: target });
   const scale = useTransform(scrollYProgress, [0, 0.3], [0.5, 1]);
+  const abt2 = useTransform(scrollYProgress,[0.5,1],[0.5,1])
   const text = "About me";
   const letters = text.split("");
   return (
@@ -71,9 +72,9 @@ function About() {
           </motion.div>
         </div>
         <div ref={target}>
-          <div className="h-screen w-screen sticky flex justify-center items-center top-0 bg-[#ffffff]/35 backdrop-blur-xl">
-            <motion.div
-              style={{ scale }}
+          <motion.div style={{ scale }} className="h-screen w-screen sticky flex justify-center items-center top-0 bg-[#fde6e6]">
+            <div
+              
               className="w-[60%] lg:leading-11 text-center text-[#131313] lg:text-3xl"
             >
               I'm a passionate web developer with a strong eye for design and a
@@ -83,9 +84,9 @@ function About() {
               experience. With hands-on experience in Figma, I bridge the gap
               between design and development, ensuring every project is both
               visually compelling and technically sound.
-            </motion.div>
-          </div>
-          <div className="h-screen w-screen sticky top-0 mt-[200vh] flex justify-center items-center bg-gray-300">
+            </div>
+          </motion.div>
+          <motion.div style={{scale:abt2}} className="h-screen w-screen sticky top-0 mt-[200vh] flex justify-center items-center bg-[#edfed1]">
             <div className="h-auto w-[60%] lg:w-4xl lg:leading-11 text-center text-black lg:text-3xl">
             I'm always exploring new technologies and pushing the boundaries of
             what's possible in the browser. Whether it's optimizing performance,
@@ -95,7 +96,7 @@ function About() {
             communication, creative thinking, and building web experiences that
             not only look great—but feel great to use.
             </div>
-          </div>
+          </motion.div>
           <div className="h-[200vh]" />
         </div>
       </div>
