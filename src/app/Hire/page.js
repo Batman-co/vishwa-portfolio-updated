@@ -28,8 +28,8 @@ function Hire() {
             <div className="text-sm md:text-lg">
               Always down to pair up,
               <br /> share tips, or just rant about bugs.
-              <br /> If you're building something cool
-              <br /> or weird, let's connect.
+              <br /> If you&#39;re building something cool
+              <br /> or weird, let&#39;s connect.
             </div>
           </motion.div>
           <motion.div
@@ -42,7 +42,7 @@ function Hire() {
             </span>
             <div className="text-sm md:text-lg">
               Designers, storytellers,
-              <br /> digital dreamers <br /> I'd love to team up <br /> and
+              <br /> digital dreamers <br /> I&#39;d love to team up <br /> and
               bring fresh ideas to life.
             </div>
           </motion.div>
@@ -54,8 +54,8 @@ function Hire() {
               Mentors & Guides
             </span>
             <div className="text-sm md:text-lg">
-              If you've walked the
-              <br /> path before and love <br /> helping others grow <br />— I'm
+              If you&#39;ve walked the
+              <br /> path before and love <br /> helping others grow <br />— I&#39;m
               all ears and
               <br /> eager to learn.
             </div>
@@ -70,9 +70,9 @@ function Hire() {
             <div className="text-sm md:text-lg">
               Actively exploring new
               <br /> roles and meaningful work.
-              <br /> If you're hiring or
+              <br /> If you&#39;re hiring or
               <br /> know someone who is,
-              <br /> I'd love to chat.
+              <br /> I&#39;d love to chat.
             </div>
           </motion.div>
           <motion.div
@@ -83,9 +83,9 @@ function Hire() {
               Friendships in Tech
             </span>
             <div className="text-sm md:text-lg">
-              Whether it's code,
+              Whether it&#39;s code,
               <br /> games, memes, or random <br /> late-night convos <br />—
-              I'm here for genuine <br /> connection.
+              I&#39;m here for genuine <br /> connection.
             </div>
           </motion.div>
           <motion.div
@@ -98,7 +98,7 @@ function Hire() {
             <div className="text-sm md:text-lg">
               I love swapping stories,
               <br /> ideas, and experiences.
-              <br /> Hit me up if you're down for a <br />
+              <br /> Hit me up if you&#39;re down for a <br />
               casual convo or virtual coffee.
             </div>
           </motion.div>
@@ -107,7 +107,7 @@ function Hire() {
           <div className="h-screen mt-[-100vh]" />
           <div className="h-screen w-screen bg-[#edfed1]  sticky bottom-0  flex  justify-center items-center rounded-t-[56px]">
             <div className="lg:text-7xl lg:tracking-widest md:text-6xl md:tracking-wider sm:text-5xl text-3xl sm:text-center sm:tracking-normal  font-semibold text-black">
-              Let's connect
+              Let&#39;s connect
             </div>
             <motion.div
               initial={{ opacity: 0 }}
