@@ -77,7 +77,7 @@ function About() {
               
               className="w-[60%] lg:leading-11 text-center text-[#131313] lg:text-3xl"
             >
-              I'm a passionate web developer with a strong eye for design and a
+              I&#39;m a passionate web developer with a strong eye for design and a
               solid foundation in UI/UX principles. I bring ideas to life on the
               web using Next.js for fast, scalable applications, and I craft
               smooth, engaging interactions with Framer Motion to elevate user
@@ -88,8 +88,8 @@ function About() {
           </motion.div>
           <motion.div style={{scale:abt2}} className="h-screen w-screen sticky top-0 mt-[200vh] flex justify-center items-center bg-[#edfed1]">
             <div className="h-auto w-[60%] lg:w-4xl lg:leading-11 text-center text-black lg:text-3xl">
-            I'm always exploring new technologies and pushing the boundaries of
-            what's possible in the browser. Whether it's optimizing performance,
+            I&#39;m always exploring new technologies and pushing the boundaries of
+            what&#39;s possible in the browser. Whether it&#39;s optimizing performance,
             experimenting with animations, or collaborating closely with
             designers and product teams, I thrive on turning complex problems
             into intuitive, elegant solutions. Beyond the code, I value clean
