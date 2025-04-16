@@ -181,7 +181,7 @@ function Hire() {
                     <motion.rect
                       initial={{ pathLength: 0 }}
                       whileInView={{ pathLength: 1 }}
-                      transition={{ duration: 3, delay: 1 }}
+                      transition={{ duration: 1, delay: 0.25}}
                       x="32"
                       y="32"
                       width="484"
@@ -198,7 +198,7 @@ function Hire() {
                     <motion.path
                       initial={{ pathLength: 0 }}
                       whileInView={{ pathLength: 1 }}
-                      transition={{ duration: 3, delay: 1 }}
+                      transition={{ duration: 0.5}}
                       d="M240 216h48v24c10-18 36-32 66-26 26 5 42 26 42 58v96h-48v-84c0-18-8-28-22-28s-30 14-30 36v76h-56V216z"
                     />
                   </g>

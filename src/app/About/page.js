@@ -62,7 +62,7 @@ function About() {
                     initial: { y: 100 },
                     Inview: { y: 0 },
                   }}
-                  transition={{ duration: 1, delay: (i + 1) * 0.25 }}
+                  transition={{ duration: 2, delay: (i + 1) * 0.25 }}
                   className="text-black tracking-widest lg:text-[100px] md:text-[64px] sm:text-[56px] text-[48px]"
                 >
                   {letter === " " ? "\u00A0" : letter}
@@ -72,10 +72,10 @@ function About() {
           </motion.div>
         </div>
         <div ref={target}>
-          <motion.div style={{ scale }} className="h-screen w-screen sticky flex justify-center items-center top-0 bg-[#5a5a5a]">
+          <motion.div style={{ scale }} className="h-screen w-screen sticky flex justify-center items-center top-0 bg-[#e3af85]">
             <div
               
-              className="w-[60%] lg:leading-11 text-center text-[#d6d6d6] lg:text-3xl"
+              className="w-[60%] lg:leading-11 text-center text-[#1a1a1a] lg:text-3xl"
             >
               I&#39;m a passionate web developer with a strong eye for design and a
               solid foundation in UI/UX principles. I bring ideas to life on the
