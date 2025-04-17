@@ -17,12 +17,12 @@ function Hire() {
     <Transition>
       <div className="h-[700vh] w-screen relative">
         <div ref={ref} className="h-[600vh]">
-          <div className="h-screen w-screen sticky top-0 flex justify-center items-center text-2xl md:text-7xl sm:text-center text-black">
+          <div className="h-screen w-screen sticky top-0 flex justify-center z-1 bg-[#FFEBCA] items-center text-2xl md:text-7xl sm:text-center text-black">
             What am I looking for?
           </div>
           <motion.div
             style={{ rotateY: card1 }}
-            className="w-fit h-72 p-5 justify-start absolute left-1/2 top-[120vh] items-start bg-[#CCD6B8]/15 backdrop-blur-xl flex flex-col text-black gap-10"
+            className="w-fit h-72 p-5 justify-start absolute left-1/2 top-[120vh] z-2 items-start bg-[#CCD6B8]/15 backdrop-blur-xl flex flex-col text-black gap-10"
           >
             <span className="text-2xl font-semibold">Fellow Developers</span>
             <div className="text-sm md:text-lg">
@@ -34,7 +34,7 @@ function Hire() {
           </motion.div>
           <motion.div
             style={{ rotateY: card2 }}
-            className="w-fit h-72 p-5 justify-start absolute left-1/12 top-[80vh] items-start bg-[#CCD6B8]/15 backdrop-blur-xl flex flex-col text-black gap-10"
+            className="w-fit h-72 p-5 justify-start absolute left-1/12 top-[80vh] z-2 items-start bg-[#CCD6B8]/15 backdrop-blur-xl flex flex-col text-black gap-10"
           >
             <span className="text-lg md:text-2xl font-semibold">
               {" "}
@@ -48,7 +48,7 @@ function Hire() {
           </motion.div>
           <motion.div
             style={{ rotateY: card3 }}
-            className="w-fit h-72 p-5 justify-start absolute left-[75%] top-[220vh] items-start bg-[#CCD6B8]/15 backdrop-blur-xl flex flex-col text-black gap-10"
+            className="w-fit h-72 p-5 justify-start absolute left-[75%] top-[220vh] z-2 items-start bg-[#CCD6B8]/15 backdrop-blur-xl flex flex-col text-black gap-10"
           >
             <span className="text-lg md:text-2xl font-semibold">
               Mentors & Guides
@@ -62,7 +62,7 @@ function Hire() {
           </motion.div>
           <motion.div
             style={{ rotateY: card3 }}
-            className="w-fit h-64 lg:h-72 p-5 justify-start absolute left-1/5 top-[200vh] items-start bg-[#CCD6B8]/15 backdrop-blur-xl flex flex-col text-black gap-10"
+            className="w-fit h-64 lg:h-72 p-5 justify-start absolute left-1/5 top-[200vh] z-2 items-start bg-[#CCD6B8]/15 backdrop-blur-xl flex flex-col text-black gap-10"
           >
             <span className="text-lg md:text-2xl font-semibold">
               Opportunities & Roles
@@ -77,7 +77,7 @@ function Hire() {
           </motion.div>
           <motion.div
             style={{ rotateY: card4 }}
-            className="w-fit h-72 p-5 justify-start absolute left-1/2 top-[300vh] items-start bg-[#CCD6B8]/15 backdrop-blur-xl flex flex-col text-black gap-10"
+            className="w-fit h-72 p-5 justify-start absolute left-1/2 top-[300vh] z-2 items-start bg-[#CCD6B8]/15 backdrop-blur-xl flex flex-col text-black gap-10"
           >
             <span className="text-lg md:text-2xl font-semibold">
               Friendships in Tech
@@ -90,7 +90,7 @@ function Hire() {
           </motion.div>
           <motion.div
             style={{ rotateY: card5 }}
-            className="w-fit h-72 p-5 justify-start absolute left-1/8 top-[400vh] items-start bg-[#CCD6B8]/15 backdrop-blur-xl flex flex-col text-black gap-10"
+            className="w-fit h-72 p-5 justify-start absolute left-1/8 top-[400vh] z-2 items-start bg-[#CCD6B8]/15 backdrop-blur-xl flex flex-col text-black gap-10"
           >
             <span className="text-lg md:text-2xl font-semibold">
               Convos & Coffee Chats
