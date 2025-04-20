@@ -51,7 +51,7 @@ export default function Home() {
                 
                 className="text-[#1C1C1C] font-light text-[30px]"
               >
-                Web Developer
+                <h1>Web Developer</h1>
               </motion.div>
             </motion.div>
 
@@ -70,7 +70,7 @@ export default function Home() {
                 
                 className="text-[#1C1C1C] font-light text-[30px]"
               >
-                UI/UX designer
+                <h1>UI/UX designer</h1>
               </motion.div>
             </motion.div>
           </div>
