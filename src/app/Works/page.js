@@ -56,10 +56,12 @@ function Works() {
           </motion.span>
         </div>
         <div className="w-screen h-screen mt-10">
-          <DynamicProject date="2022" pname="Learning App" role="UI/UX Designer" img="./Images/Learning.png"/>
-          <DynamicProject date="2022" pname="Fest X" role="UI/UX Designer" img="./Images/festx.png" />
-          <DynamicProject date="2024" pname="Shipped" role="UI/UX Designer" img="./Images/shipped.png" />
-          <DynamicProject date="2024" pname="Fest x'24" role="UI/UX Designer" img="./Images/festx24.png" />  
+          <DynamicProject date="2022" pname="Learning App" role1="UI/UX Designer" img="./Images/Learning.png"/>
+          <DynamicProject date="2022" pname="Fest X" role1="UI/UX Designer" img="./Images/festx.png" />
+          <DynamicProject date="2024" pname="Shipped" role1="UI/UX Designer" img="./Images/shipped.png" />
+          <DynamicProject date="2024" pname="Fest x'24" role1="UI/UX Designer" img="./Images/festx24.png" /> 
+          <DynamicProject date="2025" pname="Client Portfolio" role1="UI/UX Designer" role2="Web Developer" img="./Images/Eshwar port.png" />
+          <DynamicProject date="2025" pname="Final Year-Project" role1="UI/UX Designer" role2="Web Developer" img="./Images/Lil.png" />
         </div>
       </div>
     </Transition>

@@ -1,10 +1,10 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { useState,useCallback} from "react";
+import { useState, useCallback } from "react";
 import { motion, AnimatePresence } from "motion/react";
 
-function Projects({ pname, img, date, role }) {
+function Projects({ pname, img, date, role1, role2 }) {
   const [hovered, sethovered] = useState(false);
   const handleMouseEnter = useCallback(() => sethovered(true), []);
   const handleMouseLeave = useCallback(() => sethovered(false), []);
@@ -17,10 +17,18 @@ function Projects({ pname, img, date, role }) {
       }`}
     >
       <span className="lg:text-4xl md:text-2xl font-light">{date}</span>
-      <span className="lg:text-5xl md:text-3xl font-semibold tracking-tighter">{pname}</span>
-      <span className="lg:text-2xl md:text-xl font-medium tracking-tight absolute right-6">
-        {role}
+      <span className="lg:text-5xl md:text-3xl font-semibold tracking-tighter">
+        {pname}
       </span>
+      <div className="h-auto w-fit flex flex-col justify-center absolute right-6 gap-2">
+        <span className="lg:text-2xl md:text-xl font-medium tracking-tight ">
+          {role1}
+        </span>
+        <span className="lg:text-2xl md:text-xl font-medium tracking-tight ">
+          {role2}
+        </span>
+      </div>
+
       <AnimatePresence>
         {hovered && (
           <motion.img
