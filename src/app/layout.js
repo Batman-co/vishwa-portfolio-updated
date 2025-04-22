@@ -2,7 +2,7 @@ import { Montserrat} from "next/font/google";
 import "./globals.css";
 import Nav from "./nav";
 import Progressbar from "./Progressbar";
-
+import { Analytics } from "@vercel/analytics/react"
 
 const mon = Montserrat({
   variable: "--font-mont",
@@ -23,6 +23,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${mon.variable} antialiased`}
       >
+        <Analytics />
         <Progressbar />
         <Nav />
         {children}
