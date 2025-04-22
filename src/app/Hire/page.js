@@ -55,8 +55,8 @@ function Hire() {
             </span>
             <div className="text-sm md:text-lg">
               If you&#39;ve walked the
-              <br /> path before and love <br /> helping others grow <br />— I&#39;m
-              all ears and
+              <br /> path before and love <br /> helping others grow <br />—
+              I&#39;m all ears and
               <br /> eager to learn.
             </div>
           </motion.div>
@@ -126,83 +126,72 @@ function Hire() {
             </motion.div>
 
             <div className="w-fit h-hit justify-center items-center flex gap-20 left-1/2 -translate-x-1/2 p-5 absolute bottom-1/4">
-              <div className=" h-fit w-fit ">
+              <div className="h-fit w-fit animate-bounce">
                 <a href="https://www.instagram.com/vizrandomnz/">
-                <svg
-                  width="54"
-                  height="54"
-                  viewBox="0 0 54 54"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="animate-bounce"
-                >
-                  <motion.rect
-                    initial={{ pathLength: 0 }}
-                    whileInView={{ pathLength: 1.1 }}
-                    transition={{ duration: 3, delay: 0.7 }}
-                    x="2"
-                    y="2"
-                    width="50"
-                    height="50"
-                    rx="10"
-                    stroke="#FF7080"
-                    strokeWidth="5"
-                  />
-                  <motion.circle
-                    initial={{ pathLength: 0 }}
-                    whileInView={{ pathLength: 1.1 }}
-                    transition={{ duration: 3, delay: 0.7 }}
-                    cx="26.5"
-                    cy="27.5"
-                    r="12"
-                    stroke="#FF7080"
-                    strokeWidth="5"
-                  />
-                  <circle cx="43" cy="12" r="3" fill="#FF7080" />
-                </svg>
+                  <svg
+                    className="w-18 h-18"
+                    viewBox="0 0 512 512"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <defs>
+                      <linearGradient
+                        id="instaGradient"
+                        x1="0%"
+                        y1="0%"
+                        x2="100%"
+                        y2="100%"
+                      >
+                        <stop offset="0%" stopColor="#feda75" />
+                        <stop offset="25%" stopColor="#fa7e1e" />
+                        <stop offset="50%" stopColor="#d62976" />
+                        <stop offset="75%" stopColor="#962fbf" />
+                        <stop offset="100%" stopColor="#4f5bd5" />
+                      </linearGradient>
+                    </defs>
+                    <rect
+                      x="64"
+                      y="64"
+                      width="384"
+                      height="384"
+                      rx="80"
+                      ry="80"
+                      fill="url(#instaGradient)"
+                    />
+                    <circle cx="256" cy="256" r="96" fill="#ffffff" />
+                    <circle cx="390" cy="122" r="24" fill="#ffffff" />
+                  </svg>
                 </a>
               </div>
-              <div className="h-fit w-fit">
+              <div className="h-fit w-fit animate-bounce">
                 <a href="https://www.linkedin.com/in/vishwanath-k-a42044225/">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 448 512"
-                  width="70"
-                  height="50"
-                  className="animate-bounce"
-                >
-                  <g
-                    fill="none"
-                    stroke="#0077B5"
-                    strokeWidth="24"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
+                  <svg
+                    className="w-14 h-14"
+                    viewBox="0 0 448 512"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <motion.rect
-                      initial={{ pathLength: 0 }}
-                      whileInView={{ pathLength: 1 }}
-                      transition={{ duration: 1, delay: 0.25}}
-                      x="32"
-                      y="32"
-                      width="484"
-                      height="448"
-                      rx="48"
-                      strokeWidth="45"
-                      ry="48"
+                    <defs>
+                      <linearGradient
+                        id="linkedinGradient"
+                        x1="0%"
+                        y1="0%"
+                        x2="100%"
+                        y2="100%"
+                      >
+                        <stop offset="0%" stopColor="#0077B5" />
+                        <stop offset="100%" stopColor="#005582" />
+                      </linearGradient>
+                    </defs>
+                    <rect
+                      width="105%"
+                      height="100%"
+                      rx="60"
+                      fill="url(#linkedinGradient)"
                     />
-
-                    <rect x="148" y="216" width="48" height="152" rx="10" />
-
-                    <circle cx="172" cy="152" r="28" />
-
-                    <motion.path
-                      initial={{ pathLength: 0 }}
-                      whileInView={{ pathLength: 1 }}
-                      transition={{ duration: 0.5}}
-                      d="M240 216h48v24c10-18 36-32 66-26 26 5 42 26 42 58v96h-48v-84c0-18-8-28-22-28s-30 14-30 36v76h-56V216z"
+                    <path
+                      fill="#ffffff"
+                      d="M100.28 202.56h55.89v182.23h-55.89zm27.94-91.05c-18.04 0-32.65 14.61-32.65 32.65s14.61 32.65 32.65 32.65 32.65-14.61 32.65-32.65-14.6-32.65-32.65-32.65zm60.73 91.05h53.52v24.89h.77c7.46-14.13 25.7-29.05 52.91-29.05 56.58 0 66.99 37.24 66.99 85.63v100.76h-55.87v-89.25c0-21.31-.38-48.73-29.7-48.73-29.73 0-34.27 23.24-34.27 47.28v90.7h-54.35z"
                     />
-                  </g>
-                </svg>
+                  </svg>
                 </a>
               </div>
             </div>
