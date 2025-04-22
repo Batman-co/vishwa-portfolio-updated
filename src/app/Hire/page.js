@@ -127,7 +127,7 @@ function Hire() {
 
             <div className="w-fit h-hit justify-center items-center flex gap-20 left-1/2 -translate-x-1/2 p-5 absolute bottom-1/4">
               <div className="h-fit w-fit animate-bounce">
-                <a href="https://www.instagram.com/vizrandomnz/">
+                <a href="https://www.instagram.com/vizrandomnz/" target="_blank">
                   <svg
                     className="w-18 h-18"
                     viewBox="0 0 512 512"
@@ -163,7 +163,7 @@ function Hire() {
                 </a>
               </div>
               <div className="h-fit w-fit animate-bounce">
-                <a href="https://www.linkedin.com/in/vishwanath-k-a42044225/">
+                <a href="https://www.linkedin.com/in/vishwanath-k-a42044225/" target="_blank">
                   <svg
                     className="w-14 h-14"
                     viewBox="0 0 448 512"
